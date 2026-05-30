@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import TechStack from "../components/TechStack";
 import Timeline from "../components/Timeline";
+import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <About />
       <TechStack />
       <Timeline />
+      <Gallery />
       <Contact />
     </main>
   );

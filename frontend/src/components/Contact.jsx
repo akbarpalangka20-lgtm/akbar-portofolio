@@ -49,7 +49,7 @@ export default function Contact() {
           variants={fadeUp}
         >
           <div className="font-mono text-xs uppercase tracking-[0.2em] mb-3" style={{ color: "var(--text-muted)" }}>
-            04 — Contact
+            05 — Contact
           </div>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1] mb-6" style={{ color: "var(--text-primary)" }}>
             Let's build something <span className="gradient-text">memorable</span>.

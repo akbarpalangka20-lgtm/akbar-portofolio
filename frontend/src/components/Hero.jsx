@@ -99,18 +99,18 @@ export default function Hero() {
           className="relative mx-auto lg:mx-0"
           data-testid="hero-avatar-wrap"
         >
-          <div className="absolute -inset-6 rounded-[40px] opacity-60 blur-3xl"
+          <div className="absolute -inset-6 rounded-full opacity-60 blur-3xl"
             style={{ background: "linear-gradient(135deg, var(--accent-1), var(--accent-2))" }}
           />
-          <div className="relative glass-strong rounded-[28px] p-3 floaty">
+          <div className="relative glass-strong rounded-full p-3 floaty w-[360px] h-[360px] max-w-full aspect-square">
             <img
               src={PROFILE.avatar}
               alt="Akbar avatar"
-              className="rounded-[22px] w-full max-w-[360px] object-cover"
+              className="rounded-full w-full h-full object-cover"
               loading="eager"
               data-testid="hero-avatar"
             />
-            <div className="absolute -bottom-4 -left-4 glass-strong px-3 py-2 rounded-xl text-xs font-mono"
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 glass-strong px-3 py-2 rounded-full text-xs font-mono whitespace-nowrap"
               style={{ color: "var(--text-secondary)" }}>
               <span className="gradient-text font-semibold">~/akbar</span> · building
             </div>

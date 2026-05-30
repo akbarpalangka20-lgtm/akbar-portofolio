@@ -9,6 +9,7 @@ import CustomCursor from "./components/CustomCursor";
 import ParticlesBackground from "./components/ParticlesBackground";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
+import GalleryPage from "./pages/GalleryPage";
 
 export default function App() {
   const { theme, toggle } = useTheme();
@@ -23,6 +24,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </AnimatePresence>

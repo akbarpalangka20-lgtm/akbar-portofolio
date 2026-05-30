@@ -6,6 +6,7 @@ import ThemeToggle from "./ThemeToggle";
 const NAV = [
   { id: "overview", label: "Overview", to: "/", section: "hero" },
   { id: "projects", label: "Projects", to: "/projects" },
+  { id: "gallery", label: "Gallery", to: "/gallery" },
   { id: "contact", label: "Contact", to: "/", section: "contact" },
 ];
 
@@ -43,12 +44,13 @@ export default function Navbar({ theme, toggle }) {
 
   const getActive = (item) => {
     if (item.to === "/projects") return location.pathname === "/projects";
+    if (item.to === "/gallery") return location.pathname === "/gallery";
     if (location.pathname !== "/") return false;
     return activeSection === item.section;
   };
 
   const handleClick = (e, item) => {
-    if (item.to === "/projects") return; // normal Link navigation
+    if (item.to === "/projects" || item.to === "/gallery") return; // normal Link navigation
     e.preventDefault();
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollTo: item.section } });

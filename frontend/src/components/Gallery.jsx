@@ -46,7 +46,7 @@ export default function Gallery() {
               className="font-mono text-xs uppercase tracking-[0.2em] mb-3"
               style={{ color: "var(--text-muted)" }}
             >
-              04 — Gallery
+              Personal collection
             </div>
             <h2
               className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1]"

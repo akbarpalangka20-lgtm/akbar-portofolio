@@ -1,0 +1,100 @@
+{
+  "theme": "dark",
+  "archetype": "4 (Swiss & High-Contrast) + Premium Tech",
+  "typography": {
+    "headings": {
+      "family": "Cabinet Grotesk, sans-serif",
+      "weights": ["700", "900"],
+      "tracking": "tracking-tighter"
+    },
+    "body": {
+      "family": "Geist, sans-serif",
+      "weights": ["400", "500"]
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "weights": ["400"]
+    }
+  },
+  "colors": {
+    "dark": {
+      "background": "#050505",
+      "surface": "rgba(255, 255, 255, 0.03)",
+      "border": "rgba(255, 255, 255, 0.08)",
+      "textPrimary": "#FAFAFA",
+      "textSecondary": "#A1A1AA",
+      "accentGradient": "from-blue-500 to-purple-500"
+    },
+    "light": {
+      "background": "#FAFAFA",
+      "surface": "rgba(0, 0, 0, 0.03)",
+      "border": "rgba(0, 0, 0, 0.08)",
+      "textPrimary": "#0A0A0A",
+      "textSecondary": "#52525B",
+      "accentGradient": "from-blue-600 to-purple-600"
+    }
+  },
+  "animations": {
+    "scrollReveal": "Fade-in and slide-up using Framer Motion, with staggering for grid items.",
+    "mouseSpotlight": "Interactive radial gradient tracking mouse position on tech stack and project cards.",
+    "particles": "Floating soft particles in the background using tsparticles.",
+    "customCursor": "Custom circular cursor following mouse pointer, growing in size over clickable elements."
+  },
+  "layout": {
+    "spacing": "Generous paddings (p-12 to p-24 for sections).",
+    "navbar": "Floating pill-shaped glassmorphism nav fixed at the top.",
+    "grid": "Bento-style asymmetric grid for tech stack and projects."
+  },
+  "components": {
+    "buttons": "Pill shaped, subtle glow on hover, mix of primary gradient buttons and glass outline buttons.",
+    "cards": "Glassmorphism panels, 1px subtle borders, nested border radii, no muddy shadows."
+  },
+  "image_urls": {
+    "avatar": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/0ddacee1-fc00-4200-b19a-b9272cf823b2/images/780fcb540bf3e5b0dfd5daba86bba1138c212d4034880c637abdf76149b86f7b.png",
+      "description": "Professional developer portrait, dark theme",
+      "category": "hero"
+    },
+    "abstract_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/0ddacee1-fc00-4200-b19a-b9272cf823b2/images/4d2f4c326d9ab1d80d125066e293cabbb6d3cecce2808d2d492680bf0650ded0.png",
+      "description": "Abstract purple and blue gradient orbs on dark background",
+      "category": "background"
+    },
+    "project_ai": {
+      "url": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxBSSUyMG5ldXJhbCUyMG5ldHdvcmslMjBicmFpbiUyMGFic3RyYWN0fGVufDB8fHx8MTc4MDE3ODQzMnww&ixlib=rb-4.1.0&q=85",
+      "description": "AI Emotion Detection neural network thumbnail",
+      "category": "projects"
+    },
+    "project_education": {
+      "url": "https://images.pexels.com/photos/7869093/pexels-photo-7869093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Educational Coding Game thumbnail",
+      "category": "projects"
+    },
+    "project_video": {
+      "url": "https://images.unsplash.com/photo-1540655037529-dec987208707?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMG1lZGlhJTIwcGxheWVyJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc4MDE3ODQzMnww&ixlib=rb-4.1.0&q=85",
+      "description": "Video Downloader dashboard thumbnail",
+      "category": "projects"
+    },
+    "project_weather": {
+      "url": "https://images.unsplash.com/photo-1705077296278-d82dd5c8662f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHx3ZWF0aGVyJTIwcmFkYXIlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzgwMTc4NDMyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Weather ML radar app thumbnail",
+      "category": "projects"
+    },
+    "project_youtube": {
+      "url": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHx5b3V0dWJlJTIwY3JlYXRvciUyMHN0dWRpbyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3ODAxNzg0MzJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "YouTube Tools studio analytics thumbnail",
+      "category": "projects"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page React app focusing on the portfolio landing page and dedicated projects route.",
+    "Implement the dark/light mode toggle saving preference in localStorage.",
+    "Use Framer Motion extensively for staggered reveals, page transitions, and the custom cursor.",
+    "Implement a Mouse Spotlight effect on cards: A radial gradient that follows the mouse cursor position on hover.",
+    "Add floating particles in the background using react-tsparticles.",
+    "Include 'data-testid' on all interactive elements: buttons, links, toggles, form inputs.",
+    "Use Lucide-React for all icons.",
+    "Keep typography tight and sharp: Cabinet Grotesk for headings, Geist for body, JetBrains Mono for badges and code snippets.",
+    "Create the floating glass pill navbar with segmented active states."
+  ]
+}

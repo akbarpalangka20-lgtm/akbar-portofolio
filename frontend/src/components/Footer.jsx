@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
           <div className="font-display text-2xl mb-1" style={{ color: "var(--text-primary)" }}>
-            akbar<span className="gradient-text">.</span>
+            akbar<span className="gradient-text">.dev</span>
           </div>
           <p className="text-xs font-mono" style={{ color: "var(--text-muted)" }}>
             Designed & built with care · © {new Date().getFullYear()}

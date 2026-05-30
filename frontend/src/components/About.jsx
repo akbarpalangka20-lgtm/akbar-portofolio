@@ -58,14 +58,15 @@ export default function About() {
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center"
+                      className="w-12 h-12 rounded-xl flex items-center justify-center"
                       style={{
                         background:
-                          "linear-gradient(135deg, rgba(59,130,246,0.18), rgba(168,85,247,0.18))",
+                          "linear-gradient(135deg, rgba(59,130,246,0.22), rgba(168,85,247,0.28))",
                         border: "1px solid var(--border-strong)",
+                        boxShadow: "0 8px 24px -10px rgba(168,85,247,0.45)",
                       }}
                     >
-                      <Icon size={18} strokeWidth={1.8} className="gradient-text" />
+                      <Icon size={22} strokeWidth={1.9} className="achievement-icon" />
                     </div>
                     <span className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--text-muted)" }}>
                       0{i + 1}

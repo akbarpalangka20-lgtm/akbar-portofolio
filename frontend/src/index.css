@@ -371,6 +371,10 @@ body {
     filter: invert(1) brightness(1.05);
 }
 
+/* Achievement card icon color (adapts to theme) */
+.achievement-icon { color: #fafafa; }
+.light .achievement-icon { color: #0a0a0a; }
+
 /* Subtle floating animation */
 @keyframes floaty {
     0%, 100% { transform: translateY(0); }

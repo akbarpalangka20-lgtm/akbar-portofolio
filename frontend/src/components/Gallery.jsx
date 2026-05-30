@@ -125,9 +125,7 @@ export default function Gallery() {
                     src={g.image}
                     alt={g.title}
                     loading="lazy"
-                    className="w-full block transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
-                    style={{ aspectRatio: `600 / ${g.height}` }}
-                    onLoad={(e) => e.currentTarget.classList.add("loaded")}
+                    className="w-full h-auto block transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
                   />
                   {/* Gradient overlay */}
                   <div

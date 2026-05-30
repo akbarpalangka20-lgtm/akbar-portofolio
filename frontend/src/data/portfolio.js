@@ -5,7 +5,7 @@ export const PROFILE = {
     "I craft elegant interfaces, intelligent systems, and playful experiments — where engineering precision meets creative curiosity.",
   bio: `I'm a self-taught developer obsessed with the intersection of design, code, and machine learning. Over the past few years I've shipped production-grade web apps, trained models that detect emotion from text, and built tools that quietly make life easier for thousands of users. I believe great software should feel like a calm conversation — minimal, responsive, and just a little magical.`,
   avatar:
-    "https://static.prod-images.emergentagent.com/jobs/0ddacee1-fc00-4200-b19a-b9272cf823b2/images/780fcb540bf3e5b0dfd5daba86bba1138c212d4034880c637abdf76149b86f7b.png",
+    "https://customer-assets.emergentagent.com/job_premium-folio-39/artifacts/1bmkaax7_Screenshot%202026-05-31%20052359.png",
   socials: {
     github: "#",
     linkedin: "#",

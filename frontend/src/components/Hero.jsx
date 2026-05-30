@@ -39,7 +39,7 @@ export default function Hero() {
             data-testid="hero-badge"
           >
             <Sparkles size={12} className="text-blue-400" />
-            <span>Open for new projects · 2025</span>
+            <span>Open for new projects · 2026</span>
           </motion.div>
 
           <motion.h1

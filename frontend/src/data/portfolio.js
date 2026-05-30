@@ -20,14 +20,14 @@ export const ACHIEVEMENTS = [
 ];
 
 export const TECH_STACK = [
-  { name: "HTML", category: "Markup", level: 96, icon: "Code2" },
-  { name: "CSS", category: "Styling", level: 94, icon: "Palette" },
-  { name: "JavaScript", category: "Language", level: 92, icon: "Braces" },
-  { name: "React", category: "Framework", level: 90, icon: "Atom" },
-  { name: "Next.js", category: "Framework", level: 84, icon: "Triangle" },
-  { name: "Python", category: "Language", level: 88, icon: "Terminal" },
-  { name: "TensorFlow", category: "ML", level: 78, icon: "Brain" },
-  { name: "Machine Learning", category: "Discipline", level: 80, icon: "Sparkles" },
+  { name: "HTML", category: "Markup", level: 96, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS", category: "Styling", level: 94, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", category: "Language", level: 92, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React", category: "Framework", level: 90, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Next.js", category: "Framework", level: 84, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", invertOnDark: true },
+  { name: "Python", category: "Language", level: 88, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "TensorFlow", category: "ML", level: 78, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  { name: "Machine Learning", category: "Discipline", level: 80, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
 ];
 
 export const PROJECTS = [

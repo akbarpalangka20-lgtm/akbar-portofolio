@@ -366,6 +366,11 @@ body {
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { scrollbar-width: none; }
 
+/* Invert near-black brand icons (e.g. Next.js) only in dark mode */
+:root:not(.light) .dark-invert {
+    filter: invert(1) brightness(1.05);
+}
+
 /* Subtle floating animation */
 @keyframes floaty {
     0%, 100% { transform: translateY(0); }

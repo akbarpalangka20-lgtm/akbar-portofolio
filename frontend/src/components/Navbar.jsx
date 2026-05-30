@@ -78,7 +78,7 @@ export default function Navbar({ theme, toggle }) {
           className="pl-3 pr-2 font-display text-base tracking-tight"
           style={{ color: "var(--text-primary)" }}
         >
-          akbar<span className="gradient-text">.</span>
+          akbar<span className="gradient-text">.dev</span>
         </Link>
         <LayoutGroup>
           <nav className="flex-1 flex items-center justify-center gap-1">

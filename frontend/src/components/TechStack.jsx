@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import * as Icons from "lucide-react";
 import SpotlightCard from "./SpotlightCard";
 import { TECH_STACK } from "../data/portfolio";
 
@@ -50,64 +49,66 @@ export default function TechStack() {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {TECH_STACK.map((t, i) => {
-            const Icon = Icons[t.icon] || Icons.Code2;
-            return (
-              <motion.div
-                key={t.name}
-                custom={i}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={fadeUp}
+          {TECH_STACK.map((t, i) => (
+            <motion.div
+              key={t.name}
+              custom={i}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={fadeUp}
+            >
+              <SpotlightCard
+                className="p-5 h-full flex flex-col"
+                data-testid={`tech-card-${t.name.toLowerCase().replace(/\s+/g, "-")}`}
               >
-                <SpotlightCard
-                  className="p-5 h-full flex flex-col"
-                  data-testid={`tech-card-${t.name.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  <div className="flex items-center justify-between mb-6">
-                    <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center"
-                      style={{
-                        background:
-                          "linear-gradient(135deg, rgba(59,130,246,0.15), rgba(168,85,247,0.18))",
-                        border: "1px solid var(--border-strong)",
-                      }}
-                    >
-                      <Icon size={18} strokeWidth={1.8} className="gradient-text" />
-                    </div>
-                    <span
-                      className="font-mono text-[10px] uppercase tracking-[0.18em]"
-                      style={{ color: "var(--text-muted)" }}
-                    >
-                      {t.category}
-                    </span>
-                  </div>
+                <div className="flex items-center justify-between mb-6">
                   <div
-                    className="font-display text-2xl mb-1"
-                    style={{ color: "var(--text-primary)" }}
+                    className="w-11 h-11 rounded-xl flex items-center justify-center"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(59,130,246,0.12), rgba(168,85,247,0.14))",
+                      border: "1px solid var(--border-strong)",
+                    }}
                   >
-                    {t.name}
-                  </div>
-                  <div
-                    className="font-mono text-xs mb-4"
-                    style={{ color: "var(--text-muted)" }}
-                  >
-                    {t.level}% proficiency
-                  </div>
-                  <div className="mt-auto progress-track">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${t.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1.1, delay: 0.1 + i * 0.04, ease: [0.22, 1, 0.36, 1] }}
-                      className="progress-fill"
+                    <img
+                      src={t.iconUrl}
+                      alt={`${t.name} logo`}
+                      loading="lazy"
+                      className={`w-6 h-6 object-contain ${t.invertOnDark ? "dark-invert" : ""}`}
                     />
                   </div>
-                </SpotlightCard>
-              </motion.div>
-            );
-          })}
+                  <span
+                    className="font-mono text-[10px] uppercase tracking-[0.18em]"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    {t.category}
+                  </span>
+                </div>
+                <div
+                  className="font-display text-2xl mb-1"
+                  style={{ color: "var(--text-primary)" }}
+                >
+                  {t.name}
+                </div>
+                <div
+                  className="font-mono text-xs mb-4"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  {t.level}% proficiency
+                </div>
+                <div className="mt-auto progress-track">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${t.level}%` }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.1, delay: 0.1 + i * 0.04, ease: [0.22, 1, 0.36, 1] }}
+                    className="progress-fill"
+                  />
+                </div>
+              </SpotlightCard>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
